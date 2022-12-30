@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER FRONT-END</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/img/logo.svg">
+</head>
+<body>
+    <!--! nawigacja strony -->
+    <nav class="main_navigation">
+        <a href="../index.html" class="nav_logo"><img src="../assets/img/logo.svg" alt="logo"></a>
+        <div id="search_box">
+            <input type="text" placeholder="Wyszukaj...">
+            <div id="search_btn"><i class="bi bi-search"></i></div>
+        </div>
+        <img class="nav_logo" style="opacity: 0;" src="../assets/img/logo.svg" alt="blank">
+    </nav>
+    <!--! sekcja przywitania na stronie -->
+    <section class="welcome_section">
+        <h1 class="title_text">zostań mistrzem front-endu</h1>
+        <button id="start_btn" onclick="go_next(1)">zaczynajmy</button>
+    </section>
+    <!--! sekcja języków programowania do wybrania -->
+    <section class="code_language_section">
+        <h1 class="title">Wybierz język programowania</h1>
+        <section class="grid_box">
+            <!--  -->
+            <div class="code_card" onclick="go_next(1)" style="--set_color: #FF9060;">
+                <div class="new_tag">NEW</div>
+                <div class="first_lane">
+                    <div class="dot"></div>
+                    <h1>html</h1>
+                </div>
+                <p class="text_content">Język znaczników, który służy do określania struktury i zawartości stron internetowych</p>
+            </div>
+            <!--  -->
+            <div class="code_card" onclick="go_next(2)" style="--set_color: #5258E6;">
+                <div class="first_lane">
+                    <div class="dot"></div>
+                    <h1>css</h1>
+                </div>
+                <p class="text_content">Język arkuszy stylów, który służy do określania wyglądu i formatowania stron internetowych</p>
+            </div>
+            <!--  -->
+            <div class="code_card" onclick="go_next(3)" style="--set_color: #f7d516;">
+                <div class="first_lane">
+                    <div class="dot"></div>
+                    <h1>javascript</h1>
+                </div>
+                <p class="text_content">Skryptowy język programowania, który jest często używany do tworzenia interaktywnych elementów na stronach internetowych</p>
+            </div>
+        </section>
+    </section>
+    <!--! stópka strony -->
+    <footer class="main_footer">
+        <h1>Created by Mikołaj Ćwikła</h1>
+    </footer>
+</body>
+    <script>
+        function go_next(num) {
+            url = '../lessons_list/lessons.html?id='+encodeURIComponent(num);
+
+            document.location.href = url;
+        }
+    </script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER FRONT-END | LESSON</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="lesson_web.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="../assets/img/logo.svg">
+    <!-- TEST -->
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="/path/to/styles/default.min.css">
+</head>
+<body style="--web_set_color: #FF9060">
+    <!--! nawigacja strony -->
+    <nav class="main_navigation">
+        <a href="../index.html" class="nav_logo"><img src="../assets/img/logo.svg" alt="logo"></a>
+        <div id="search_box">
+            <input type="text" placeholder="Wyszukaj...">
+            <div id="search_btn"><i class="bi bi-search"></i></div>
+        </div>
+        <img class="nav_logo" style="opacity: 0;" src="../assets/img/logo.svg" alt="blank">
+    </nav>
+    <section class="content max">
+        <h1 class="title" id="title_box"></h1>
+        <section id="here"></section>
+    </section>
+    <!--! stópka strony -->
+    <footer class="main_footer">
+        <h1>Created by Mikołaj Ćwikła</h1>
+    </footer>
+</body>
+    <!-- <script src="lesson.js"></script> -->
+    <script src="../assets/data/data.js"></script>
+    <script>
+        var arr
+        window.onload = function () {
+            var url = document.location.href,
+            params = url.split('?')[1].split('&'),
+            data = {}, tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            console.warn(data);
+            if (data.name == 'html_lessons') {
+                arr = html_lessons
+            } else if (data.name == 'css_lessons') {
+                arr = css_lessons
+            } else if (data.name == 'js_lessons') {
+                arr = js_lessons
+            }
+
+            if(!arr.list[data.id-1].lesson.content) {
+                document.getElementById('here').innerHTML = '<p>Brak zawartości lekcji...</p>'
+            } else {
+                document.getElementById('here').innerHTML = arr.list[data.id-1].lesson.content
+            }
+            document.getElementById('title_box').innerText = arr.list[data.id-1].title
+            hljs.highlightAll();
+        }
+    </script>
+</html>
