@@ -18,6 +18,10 @@ body {
     --welcome_height: 500px;
     --code_height: 450px;
 } 
+.max {
+    width: 100%;
+    max-width: 1240px;
+}
 //! navigacja strony
 .main_navigation {
     position: relative;

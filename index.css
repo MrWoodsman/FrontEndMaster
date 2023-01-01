@@ -18,6 +18,11 @@ body {
   --code_height: 450px;
 }
 
+.max {
+  width: 100%;
+  max-width: 1240px;
+}
+
 .main_navigation {
   position: relative;
   background: #FFFFFF;

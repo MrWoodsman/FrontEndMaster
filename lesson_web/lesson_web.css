@@ -9,11 +9,6 @@ body {
   align-items: center;
 }
 
-.max {
-  width: 100%;
-  max-width: 1440px;
-}
-
 .title {
   font-family: "Poppins";
   font-style: normal;
@@ -27,8 +22,42 @@ body {
   margin-bottom: 16px;
 }
 
+.curiosity::before, .curiosity::after {
+  content: '"';
+  color: orangered;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.tag_stmp {
+  background: rgb(192, 85, 13);
+  color: white;
+  padding: 0px 4px;
+  border-radius: 4px;
+}
+.tag_stmp::before {
+  content: "<";
+}
+.tag_stmp::after {
+  content: ">";
+}
+
+.att_stmp {
+  background: rgb(192, 28, 28);
+  color: white;
+  padding: 0px 4px;
+  border-radius: 4px;
+}
+
+.st::before {
+  content: "<";
+}
+.st::after {
+  content: ">";
+}
+
 .content {
-  padding: 16px 48px;
+  padding: 48px 48px;
   padding-bottom: 128px;
 }
 .content p, .content ul {
