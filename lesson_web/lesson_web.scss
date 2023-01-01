@@ -70,14 +70,27 @@ body {
 }
 
 @media only screen and (max-width: 675px) {
+    .title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.8rem;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #404040;
+        line-height: 100%;
+        word-spacing: 4px;
+        margin-bottom: 16px;
+    }
+    // 
     .content {
-
+        padding: 16px 24px;
         p, ul {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 500;
-            font-size: 1rem;
-            line-height: 27px;
+            font-size: .9rem;
+            line-height: calc(100% + 4px);
             text-indent: 1px;
             color: #757575;
         }
@@ -97,7 +110,7 @@ body {
             color: #FFFFFF;
             // FONT
             font-weight: 400;
-            font-size: 18px;
+            font-size: 1rem;
             line-height: calc(100% + 2px);
             code {
                 min-width: 0;
