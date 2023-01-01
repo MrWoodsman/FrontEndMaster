@@ -223,9 +223,9 @@ var html_lessons =
                 <p>Tworzenie map obrazów za pomocą znaczników HTML polega na użyciu odpowiednich znaczników, aby utworzyć obszary na obrazie, które mogą być klikalne jako linki. HTML oferuje szeroki wybór znaczników, które mogą być używane do tworzenia map obrazów.</p>
                 <p>Podstawowe znaczniki HTML, które mogą być używane do tworzenia map obrazów, to:</p>
                 <ul>
-                    <li><span class="bold st">img</span></li>
-                    <li><span class="bold st">map</span></li>
-                    <li><span class="bold st">area</span></li>
+                    <li><span class="bold st">img</span> - służy do osadzenia obrazu na stronie.</li>
+                    <li><span class="bold st">map</span> - służy do oznaczenia mapy obrazu.</li>
+                    <li><span class="bold st">area</span> - służy do oznaczenia obszaru mapy obrazu, który może być klikalny jako link.</li>
                 </ul>
                 <p>Przykładowy dokument HTML zawierający mapę obrazu może wyglądać tak:</p>
                 <pre class="code_box"><code class="language-html">&lthtml>
