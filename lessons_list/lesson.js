@@ -23,7 +23,7 @@ function set_code(e) {
         get_array = js_lessons
         document.title = 'MASTER FRONT-END | JS'
     }
-    const nextURL = '../lessons_list/lessons.html?id='+encodeURIComponent(element.getAttribute('code'));
+    const nextURL = '/FrontEndMaster/lessons_list/lessons.html?id='+encodeURIComponent(element.getAttribute('code'));
     const nextTitle = 'My new page title';
     const nextState = { additionalInformation: 'Updated the URL with JS' };
 
@@ -93,7 +93,7 @@ function load_data() {
 function open_lesson(e) {
     console.warn('open '+e.target.getAttribute('db_id'));
     // var b = document.getElementById('name').value,
-        url = '../lesson_web/lesson_web.html?id=' + encodeURIComponent(e.target.getAttribute('db_id'))+'&name='+encodeURIComponent(e.target.getAttribute('lesson_type'));
+        url = '/FrontEndMaster/lesson_web/lesson_web.html?id=' + encodeURIComponent(e.target.getAttribute('db_id'))+'&name='+encodeURIComponent(e.target.getAttribute('lesson_type'));
 
     document.location.href = url;
 }
