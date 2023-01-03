@@ -346,4 +346,36 @@ body {
     line-height: 100%;
     color: #9e9e9e;
   }
+}
+.info {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 27px;
+  text-indent: 1px;
+  color: #757575;
+}
+.info::before, .info::after {
+  content: '"';
+  color: red;
+  font-size: calc(1.1rem + 4px);
+}
+
+@media only screen and (max-width: 675px) {
+  .info {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 27px;
+    text-indent: 1px;
+    color: #757575;
+  }
+  .info::before, .info::after {
+    content: '"';
+    color: red;
+    font-size: calc(0.9rem + 4px);
+  }
 }/*# sourceMappingURL=lessons.css.map */

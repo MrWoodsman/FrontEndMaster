@@ -74,20 +74,26 @@ function load_data() {
     document.body.style.setProperty(`--web_set_color`,`${get_array.color}`)
     document.querySelector('#change_title').innerText = `${get_array.title}`
     box.innerHTML = ``
-    get_array.list.forEach((e) => {
-        const card = document.createElement('div')
-        card.addEventListener('click',open_lesson)
-        const p = document.createElement('p')
-        card.setAttribute('db_id',e.id)
-        card.setAttribute('lesson_type',get_array.type)
-        p.classList.add('card_content')
-        p.innerText = `${e.description}`
-        card.classList.add('lesson_card')
-        card.innerHTML = `<h1 class="card_title"><div class="number">${e.id}</div>${e.title}</h1>`
-        card.appendChild(p)
-        box.appendChild(card)
-    })
-    // AFTER LOAD ADD TO EVRYCARD EVENT
+    if (get_array.list.length !== 0) {
+        get_array.list.forEach((e) => {
+            const card = document.createElement('div')
+            card.addEventListener('click',open_lesson)
+            const p = document.createElement('p')
+            card.setAttribute('db_id',e.id)
+            card.setAttribute('lesson_type',get_array.type)
+            p.classList.add('card_content')
+            p.innerText = `${e.description}`
+            card.classList.add('lesson_card')
+            card.innerHTML = `<h1 class="card_title"><div class="number">${e.id}</div>${e.title}</h1>`
+            card.appendChild(p)
+            box.appendChild(card)
+        })
+        // AFTER LOAD ADD TO EVRYCARD EVENT
+    } else {
+        const div = document.createElement('div')
+        div.innerHTML = `<p class='info'>Przepraszamy, brak lekcji na ten temat. Prosimy o cierpliwość, pojawią się wkrótce...</p>`
+        box.appendChild(div)
+    }
 
 }
 function open_lesson(e) {

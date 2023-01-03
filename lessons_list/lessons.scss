@@ -344,3 +344,35 @@ body {
         }
     }
 }
+
+.info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 27px;
+    text-indent: 1px;
+    color: #757575;
+    &::before, &::after {
+        content: '"';
+        color: red;
+        font-size: calc(1.1rem + 4px);
+    }
+}
+@media only screen and (max-width: 675px) {
+    .info {
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: .9rem;
+        line-height: 27px;
+        text-indent: 1px;
+        color: #757575;
+        &::before, &::after {
+            content: '"';
+            color: red;
+            font-size: calc(.9rem + 4px);
+        }
+    }
+}
