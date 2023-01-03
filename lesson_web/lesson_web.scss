@@ -39,6 +39,16 @@ body {
         content: '>';
     }
 }
+.sel_stmp {
+    background: rgba(192, 85, 13, 1);
+    color: white;
+    padding: 0px 4px;
+    border-radius: 4px;
+}
+.basic_img {
+    border-radius: 12px;
+    margin: 0 32px;
+}
 .att_stmp {
     background: rgba(192, 28, 28, 1);
     color: white;
@@ -154,5 +164,9 @@ body {
             flex-direction: column;
             gap: 16px;
         }
+    }
+    .basic_img {
+        border-radius: 12px;
+        margin: 0 12px;
     }
 }

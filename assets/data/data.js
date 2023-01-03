@@ -100,10 +100,10 @@ var html_lessons =
                 <p>Tworzenie tabel za pomocą znaczników HTML polega na użyciu odpowiednich znaczników, aby utworzyć tabelę z danymi na stronie internetowej. HTML oferuje szeroki wybór znaczników, które mogą być używane do tworzenia tabel.</p>
                 <p>Podstawowe znaczniki HTML, które mogą być używane do tworzenia tabel, to:</p>
                 <ul>
-                    <li><span class="bold st">table></span> - służy do oznaczenia tabeli.</li>
-                    <li><span class="bold st">tr></span> - służy do oznaczenia wiersza tabeli.</li>
-                    <li><span class="bold st">td></span> - służy do oznaczenia komórki tabeli.</li>
-                    <li><span class="bold st">th></span> - służy do oznaczenia komórki nagłówka tabeli.</li>
+                    <li><span class="bold st">table</span> - służy do oznaczenia tabeli.</li>
+                    <li><span class="bold st">tr</span> - służy do oznaczenia wiersza tabeli.</li>
+                    <li><span class="bold st">td</span> - służy do oznaczenia komórki tabeli.</li>
+                    <li><span class="bold st">th</span> - służy do oznaczenia komórki nagłówka tabeli.</li>
                 </ul>
                 <p>Przykładowy dokument HTML zawierający tabelę może wyglądać tak:</p>
                 <pre class="code_box"><code class="language-html">&lthtml>
@@ -150,11 +150,11 @@ var html_lessons =
                 <p>Tworzenie formularzy za pomocą znaczników HTML polega na użyciu odpowiednich znaczników, aby utworzyć formularz do wypełniania przez użytkowników strony internetowej. HTML oferuje szeroki wybór znaczników, które mogą być używane do tworzenia formularzy.</p>
                 <p>Podstawowe znaczniki HTML, które mogą być używane do tworzenia formularzy, to:</p>
                 <ul>
-                    <li><span class="bold st">form></span> - służy do oznaczenia formularza.</li>
-                    <li><span class="bold st">input></span> - służy do utworzenia pola formularza, takiego jak pole tekstowe, przycisk radio, przycisk checkbox itp.</li>
-                    <li><span class="bold st">label></span> - służy do oznaczenia etykiety pola formularza.</li>
-                    <li><span class="bold st">select></span> - służy do utworzenia listy rozwijanej w formularzu.</li>
-                    <li><span class="bold st">option></span> - służy do oznaczenia opcji listy rozwijanej.</li>
+                    <li><span class="bold st">form</span> - służy do oznaczenia formularza.</li>
+                    <li><span class="bold st">input</span> - służy do utworzenia pola formularza, takiego jak pole tekstowe, przycisk radio, przycisk checkbox itp.</li>
+                    <li><span class="bold st">label</span> - służy do oznaczenia etykiety pola formularza.</li>
+                    <li><span class="bold st">select</span> - służy do utworzenia listy rozwijanej w formularzu.</li>
+                    <li><span class="bold st">option</span> - służy do oznaczenia opcji listy rozwijanej.</li>
                 </ul>
                 <p></p>
                 <pre class="code_box"><code class="language-html">&lthtml>
@@ -196,7 +196,7 @@ var html_lessons =
                 <p>Dodawanie linków i odnośników za pomocą znaczników HTML polega na użyciu odpowiednich znaczników, aby utworzyć odnośnik do innych stron lub plików na stronie internetowej. HTML oferuje szeroki wybór znaczników, które mogą być używane do tworzenia odnośników.</p>
                 <p>Podstawowy znacznik HTML, który może być używany do tworzenia odnośników, to:</p>
                 <ul>
-                <li><span class="bold st">a></span> - służy do oznaczenia odnośnika.</li>
+                <li><span class="bold st">a</span> - służy do oznaczenia odnośnika.</li>
                 </ul>
                 <p>Przykładowy dokument HTML zawierający odnośnik do innej strony może wyglądać tak:</p>
                 <pre class="code_box"><code class="language-html">&lthtml>
@@ -246,150 +246,91 @@ var html_lessons =
                 <p>Mapy obrazów są szczególnie przydatne, gdy na stronie internetowej znajduje się duży obraz, na którym chcemy umieścić wiele odnośników. Dzięki mapom obrazów możemy osadzić obraz na stronie, a następnie oznaczyć różne obszary na nim jako linki, bez konieczności dodawania dodatkowych elementów interfejsu użytkownika, takich jak przyciski czy menu.</p>
                 `
             }
-        },
-        {
-            "id":"8",
-            "title":"Dodawanie plików multimedialnych za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do dodawania plików audio, wideo i innych plików multimedialnych do strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"9",
-            "title":"Tworzenie menu nawigacyjnego za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia menu nawigacyjnego, które pozwala użytkownikom łatwo przemieszczać się po różnych sekcjach strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"10",
-            "title":"Tworzenie meta tagów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia meta tagów, które służą do opisywania zawartości strony dla wyszukiwarek i innych narzędzi.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"11",
-            "title":"Tworzenie ram za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia ram, które pozwalają na wyświetlanie kilku stron w jednym oknie przeglądarki.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"12",
-            "title":"Tworzenie dokumentów HTML5 za pomocą nowych znaczników",
-            "description":"Ta lekcja pokaże, jak używać nowych znaczników HTML5, takich jak <header>, <footer>, <article> itp., w celu tworzenia bardziej semantycznych i przyjaznych dla użytkownika dokumentów.",
-            "lesson":{
-                "content":""
-            }
-        },
+        }
     ]
 }
 var css_lessons = 
 {
-    "description":"CSS",
+    "description":"CSS (Cascading Style Sheets) to język służący do opisywania wyglądu i formatowania dokumentów HTML. CSS pozwala na zdefiniowanie wyglądu elementów strony internetowej, takich jak kolory, czcionki, rozmiary, pozycje itp. Dzięki CSS możemy zmieniać wygląd strony bez konieczności modyfikowania jej kodu HTML, co umożliwia lepszą separację treści i prezentacji.",
     "color":"#5258E6",
     "type":"css_lessons",
     "title":"css",
     "list": [
         {
-            "id":"1",
-            "title":"Wprowadzenie do CSS",
-            "description":"Ta lekcja zapoznaje początkujących z podstawami HTML, takimi jak co to jest język HTML, do czego służy i jak go używać.",
-            "lesson":{
-                "content":""
+            "id": 1,
+            "title": "Wprowadzenie do CSS",
+            "description": "Ta lekcja zapoznaje początkujących z podstawami CSS, takimi jak co to jest język CSS, do czego służy i jak go używać.",
+            "lesson": {
+                "content": `
+                    <p><span class="bold">CSS</span>, czyli Cascading Style Sheets, to język służący do opisywania wyglądu stron internetowych. Dzięki CSS można łatwo zmienić wygląd strony, np. zmienić kolor tekstu czy tła, zmienić wielkość czcionki, dodać cienie czy gradienty itp.</p>
+                    <p><span class="bold">CSS</span> pozwala oddzielić prezentację strony od jej treści. Dzięki temu twórcy stron internetowych mogą łatwiej zmieniać wygląd swoich stron, a użytkownicy mogą lepiej dostosowywać je do swoich potrzeb.</p>
+                    <img class="basic_img" src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png">
+                    <p><span class="bold">CSS</span> jest wspierane przez wszystkie główne przeglądarki internetowe i jest jednym z najważniejszych języków do tworzenia stron internetowych.</p>
+                    <p>Aby używać <span class="bold">CSS</span>, trzeba dodać odpowiednie znaczniki do pliku HTML. Można też umieścić kod <span class="bold">CSS</span> w osobnym pliku i dołączyć go do strony za pomocą odpowiedniego znacznika.</p>
+                    <p>Jeśli chcesz nauczyć się tworzyć strony internetowe za pomocą <span class="bold">CSS</span>, to jesteś we właściym miejscu. Następne lekcje pozwolą Ci poznać podstawy tego języka i nauczą, jak go używać do tworzenia atrakcyjnych i responsywnych stron internetowych.</p>
+                    <p>Pamiętaj, że tworzenie stron internetowych wymaga cierpliwości i wiedzy, ale jest to bardzo satysfakcjonujące zajęcie, które pozwoli Ci rozwinąć swoje umiejętności i zdolności. <span class="bold">Zatem zaczynajmy!</span></p>
+                `
             }
         },
         {
-            "id":"2",
-            "title":"Tworzenie struktury strony za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia struktury strony, takiej jak nagłówki, akapity, listy itp.",
-            "lesson":{
-                "content":""
+            "id": 2,
+            "title": "Tworzenie reguł CSS",
+            "description": "Ta lekcja pokaże, jak tworzyć reguły CSS i jak je stosować do elementów HTML.",
+            "lesson": {
+                "content": `
+                    <p>Reguły <span class="bold">CSS</span> to instrukcje, które opisują, jak ma wyglądać element HTML na stronie. Każda reguła składa się z selektora, który wskazuje, jaki element HTML ma być zmieniony, oraz deklaracji, która określa, jakie zmiany mają zostać wprowadzone.</p>
+                    <p>Na przykład, aby zmienić kolor tekstu na czerwony, można użyć następującej reguły <span class="bold">CSS</span>:</p>
+<pre class="code_box"><code class="language-css">p {
+    color: red;
+}</code></pre>
+                    <p>W tym przypadku selektor <span class="sel_stmp">"p"</span> wskazuje na elementy HTML typu <span class="tag_stmp">p</span> (czyli akapity), a deklaracja <span class="sel_stmp">color: red</span> mówi, że kolor tekstu ma być ustawiony na czerwony.</p>
+                    <p>Reguły <span class="bold">CSS</span> mogą być stosowane do pojedynczych elementów HTML lub do grup elementów, np. wszystkich nagłówków lub wszystkich elementów listy. Można też stosować reguły CSS do elementów HTML na poziomie klas czy identyfikatorów.</p>
+                    <p>Pamiętaj, że reguły <span class="bold">CSS</span> działają według zasady "od góry do dołu", co ozznacza, że reguły zapisane niżej mają pierwszeństwo nad regułami zapisanymi wyżej. Dzięki temu można nadpisywać poprzednie reguły i dostosowywać wygląd strony do swoich potrzeb.</p>
+                    <p>Aby używać reguł <span class="bold">CSS</span>, trzeba dodać odpowiednie znaczniki do pliku HTML lub do osobnego pliku CSS i dołączyć go do strony za pomocą odpowiedniego znacznika. Pamiętaj, żeby zawsze zachować czystość kodu i trzymać się dobrych praktyk tworzenia stron internetowych.</p>
+                    <p>W następnych lekcjach poznasz szczegółowe przykłady, jak tworzyć reguły <span class="bold">CSS</span> i jak je stosować do elementów HTML.</p>
+                `
             }
         },
         {
-            "id":"3",
-            "title":"Formatowanie tekstu i obrazów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do formatowania tekstu i obrazów na stronie, takich jak zmiana czcionki, koloru, wielkości itp.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"4",
-            "title":"Tworzenie tabel za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia tabel z danymi na stronie.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"5",
-            "title":"Tworzenie formularzy za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia formularzy do wypełniania przez użytkowników strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"6",
-            "title":"Dodawanie linków i odnośników za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia linków i odnośników do innych stron lub plików.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"7",
-            "title":"Tworzenie map obrazów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia map obrazów, które pozwalają na tworzenie obszarów na obrazie, które mogą być klikalne jako linki.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"8",
-            "title":"Dodawanie plików multimedialnych za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do dodawania plików audio, wideo i innych plików multimedialnych do strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"9",
-            "title":"Tworzenie menu nawigacyjnego za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia menu nawigacyjnego, które pozwala użytkownikom łatwo przemieszczać się po różnych sekcjach strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"10",
-            "title":"Tworzenie meta tagów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia meta tagów, które służą do opisywania zawartości strony dla wyszukiwarek i innych narzędzi.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"11",
-            "title":"Tworzenie ram za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia ram, które pozwalają na wyświetlanie kilku stron w jednym oknie przeglądarki.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"12",
-            "title":"Tworzenie dokumentów HTML5 za pomocą nowych znaczników",
-            "description":"Ta lekcja pokaże, jak używać nowych znaczników HTML5, takich jak <header>, <footer>, <article> itp., w celu tworzenia bardziej semantycznych i przyjaznych dla użytkownika dokumentów.",
-            "lesson":{
-                "content":""
+            "id": 3,
+            "title": "Formatowanie tekstu za pomocą CSS",
+            "description": "Ta lekcja pokaże, jak używać CSS do formatowania tekstu na stronie, takich jak zmiana czcionki, koloru, wielkości itp.",
+            "lesson": {
+                "content": `
+                    <p>CSS pozwala na szerokie możliwości formatowania tekstu na stronie internetowej. Możesz zmieniać czcionkę, kolor, wielkość, odstępy między literami i wiele innych właściwości tekstu.</p>
+                    <p>Aby zmienić czcionkę tekstu, użyj właściwości "font-family" i podaj nazwę czcionki, np.:</p>
+                    <pre class="code_box"><code class="language-css">p {
+    font-family: Arial;
+}</code></pre>
+                    <p>Możesz również podać kilka nazw czcionek oddzielając je przecinkami. W takim przypadku przeglądarka będzie szukać pierwszej dostępnej czcionki na komputerze użytkownika:</p>
+                    <pre class="code_box"><code class="language-css">p {
+    font-family: Arial, sans-serif;
+}</code></pre>
+                    <p>Jeśli chcesz zmienić kolor tekstu, użyj właściwości "color" i podaj kolor w formacie szesnastkowym lub nazwie koloru:</p>
+                    <pre class="code_box"><code class="language-css">p {
+    color: #ff0000; /* czerwony */
+}</code></pre>
+                    <pre class="code_box"><code class="language-css">p {
+    color: red; /* czerwony */
+}</code></pre>
+                    <p>Aby zmienić wielkość tekstu, użyj właściwości "font-size" i podaj wielkość w jednostkach px lub em:</p>
+                    <pre class="code_box"><code class="language-css">p {
+    font-size: 16px; /* 16 pikseli */
+}</code></pre>
+                    <pre class="code_box"><code class="language-css">p {
+    font-size: 1.2em; /* 1.2 razy większa niż rozmiar domyślny */
+}</code></pre>
+                    <p>Pamiętaj, że możesz łączyć różne właściwości tekstu, np.:</p>
+                    <pre class="code_box"><code class="language-css">p {
+    font-family: Arial, sans-serif;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}</code></pre>
+                    <p>Oprócz wymienionych właściwości, istnieje wiele innych, które pozwalają na jeszcze bardziej szczegółowe formatowanie tekstu. Przykłady to: "font-style" (kursywa), "text-decoration" (podkreślenie, przekreślenie), "line-height" (wysokość linii), "letter-spacing" (odstępy między literami) itd. Spróbuj samodzielnie poeksperymentować z różnymi właściwościami i zobacz, co się stanie!</p>
+                `
             }
         },
     ]
@@ -397,106 +338,10 @@ var css_lessons =
 
 var js_lessons = 
 {
-    "description":"JS",
+    "description":"JavaScript to język programowania, który jest używany do tworzenia interaktywnych stron internetowych. JavaScript pozwala na dodawanie dynamicznych elementów do strony, takich jak animacje, obsługę zdarzeń użytkownika, komunikację z serwerem itp. JavaScript jest często używany w połączeniu z HTML i CSS do tworzenia bogatych i atrakcyjnych stron internetowych.",
     "color":"#f7d516",
     "title":"javascript",
     "type":"js_lessons",
     "list": [
-        {
-            "id":"1",
-            "title":"Wprowadzenie do JavaScript",
-            "description":"Ta lekcja zapoznaje początkujących z podstawami HTML, takimi jak co to jest język HTML, do czego służy i jak go używać.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"2",
-            "title":"Tworzenie struktury strony za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia struktury strony, takiej jak nagłówki, akapity, listy itp.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"3",
-            "title":"Formatowanie tekstu i obrazów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do formatowania tekstu i obrazów na stronie, takich jak zmiana czcionki, koloru, wielkości itp.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"4",
-            "title":"Tworzenie tabel za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia tabel z danymi na stronie.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"5",
-            "title":"Tworzenie formularzy za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia formularzy do wypełniania przez użytkowników strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"6",
-            "title":"Dodawanie linków i odnośników za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia linków i odnośników do innych stron lub plików.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"7",
-            "title":"Tworzenie map obrazów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia map obrazów, które pozwalają na tworzenie obszarów na obrazie, które mogą być klikalne jako linki.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"8",
-            "title":"Dodawanie plików multimedialnych za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do dodawania plików audio, wideo i innych plików multimedialnych do strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"9",
-            "title":"Tworzenie menu nawigacyjnego za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia menu nawigacyjnego, które pozwala użytkownikom łatwo przemieszczać się po różnych sekcjach strony.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"10",
-            "title":"Tworzenie meta tagów za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia meta tagów, które służą do opisywania zawartości strony dla wyszukiwarek i innych narzędzi.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"11",
-            "title":"Tworzenie ram za pomocą znaczników HTML",
-            "description":"Ta lekcja pokaże, jak używać znaczników HTML do tworzenia ram, które pozwalają na wyświetlanie kilku stron w jednym oknie przeglądarki.",
-            "lesson":{
-                "content":""
-            }
-        },
-        {
-            "id":"12",
-            "title":"Tworzenie dokumentów HTML5 za pomocą nowych znaczników",
-            "description":"Ta lekcja pokaże, jak używać nowych znaczników HTML5, takich jak <header>, <footer>, <article> itp., w celu tworzenia bardziej semantycznych i przyjaznych dla użytkownika dokumentów.",
-            "lesson":{
-                "content":""
-            }
-        },
     ]
 }
